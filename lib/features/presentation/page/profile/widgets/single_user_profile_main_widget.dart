@@ -4,15 +4,15 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:instagram_clone_app/consts.dart';
 import 'package:instagram_clone_app/features/domain/entities/posts/post_entity.dart';
 import 'package:instagram_clone_app/features/domain/entities/user/user_entity.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/user/get_current_uid_usecase.dart';
 import 'package:instagram_clone_app/features/presentation/cubit/auth/auth_cubit.dart';
 import 'package:instagram_clone_app/features/presentation/cubit/post/post_cubit.dart';
 import 'package:instagram_clone_app/features/presentation/cubit/user/get_single_other_user/get_single_other_user_cubit.dart';
-import 'package:instagram_clone_app/features/presentation/cubit/user/get_single_user/get_single_user_cubit.dart';
 import 'package:instagram_clone_app/features/presentation/cubit/user/user_cubit.dart';
 import 'package:instagram_clone_app/features/presentation/widgets/button_container_widget.dart';
 import 'package:instagram_clone_app/profile_widget.dart';
 import 'package:instagram_clone_app/injection_container.dart' as di;
+
+import '../../../../domain/usecases/firebase_usecases/user/user_usecases.dart';
 class SingleUserProfileMainWidget extends StatefulWidget {
   final String otherUserId;
   const SingleUserProfileMainWidget({Key? key, required this.otherUserId}) : super(key: key);

@@ -3,11 +3,8 @@ import 'dart:io';
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:instagram_clone_app/features/domain/entities/posts/post_entity.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/post/create_post_usecase.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/post/delete_post_usecase.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/post/like_post_usecase.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/post/read_posts_usecase.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/post/update_post_usecase.dart';
+
+import '../../../domain/usecases/firebase_usecases/post/post_usescases.dart';
 
 part 'post_state.dart';
 

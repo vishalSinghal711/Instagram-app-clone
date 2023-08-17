@@ -4,13 +4,14 @@ import 'package:flutter_icons/flutter_icons.dart';
 import 'package:instagram_clone_app/consts.dart';
 import 'package:instagram_clone_app/features/domain/entities/app_entity.dart';
 import 'package:instagram_clone_app/features/domain/entities/posts/post_entity.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/user/get_current_uid_usecase.dart';
 import 'package:instagram_clone_app/features/presentation/cubit/post/get_single_post/get_single_post_cubit.dart';
 import 'package:instagram_clone_app/features/presentation/cubit/post/post_cubit.dart';
 import 'package:instagram_clone_app/features/presentation/page/post/widget/like_animation_widget.dart';
 import 'package:instagram_clone_app/profile_widget.dart';
 import 'package:intl/intl.dart';
 import 'package:instagram_clone_app/injection_container.dart' as di;
+
+import '../../../../domain/usecases/firebase_usecases/user/user_usecases.dart';
 class PostDetailMainWidget extends StatefulWidget {
   final String postId;
   const PostDetailMainWidget({Key? key, required this.postId}) : super(key: key);

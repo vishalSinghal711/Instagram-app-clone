@@ -3,11 +3,8 @@ import 'dart:io';
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:instagram_clone_app/features/domain/entities/comment/comment_entity.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/comment/create_comment_usecase.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/comment/delete_comment_usecase.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/comment/like_comment_usecase.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/comment/read_comment_usecase.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/comment/update_comment_usecase.dart';
+
+import '../../../domain/usecases/firebase_usecases/comment/comment_usecases.dart';
 
 part 'comment_state.dart';
 

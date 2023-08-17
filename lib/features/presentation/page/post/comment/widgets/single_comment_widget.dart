@@ -5,7 +5,6 @@ import 'package:instagram_clone_app/consts.dart';
 import 'package:instagram_clone_app/features/domain/entities/comment/comment_entity.dart';
 import 'package:instagram_clone_app/features/domain/entities/replay/replay_entity.dart';
 import 'package:instagram_clone_app/features/domain/entities/user/user_entity.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/user/get_current_uid_usecase.dart';
 import 'package:instagram_clone_app/features/presentation/cubit/replay/replay_cubit.dart';
 import 'package:instagram_clone_app/features/presentation/page/post/comment/widgets/single_replay_widget.dart';
 import 'package:instagram_clone_app/features/presentation/widgets/form_container_widget.dart';
@@ -13,6 +12,8 @@ import 'package:instagram_clone_app/profile_widget.dart';
 import 'package:intl/intl.dart';
 import 'package:instagram_clone_app/injection_container.dart' as di;
 import 'package:uuid/uuid.dart';
+
+import '../../../../../domain/usecases/firebase_usecases/user/user_usecases.dart';
 
 class SingleCommentWidget extends StatefulWidget {
   final CommentEntity comment;

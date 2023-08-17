@@ -3,11 +3,8 @@ import 'dart:io';
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:instagram_clone_app/features/domain/entities/replay/replay_entity.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/replay/create_replay_usecase.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/replay/delete_replay_usecase.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/replay/like_replay_usecase.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/replay/read_replays_usecase.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/replay/update_replay_usecase.dart';
+
+import '../../../domain/usecases/firebase_usecases/replay/replay_usecases.dart';
 
 part 'replay_state.dart';
 

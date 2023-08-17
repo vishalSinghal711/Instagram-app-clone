@@ -3,7 +3,8 @@ import 'dart:io';
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:instagram_clone_app/features/domain/entities/posts/post_entity.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/post/read_single_post_usecase.dart';
+
+import '../../../../domain/usecases/firebase_usecases/post/post_usescases.dart';
 
 part 'get_single_post_state.dart';
 

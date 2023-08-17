@@ -2,9 +2,10 @@
 import 'package:flutter/material.dart';
 import 'package:instagram_clone_app/consts.dart';
 import 'package:instagram_clone_app/features/domain/entities/user/user_entity.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/user/get_single_user_usecase.dart';
 import 'package:instagram_clone_app/profile_widget.dart';
 import 'package:instagram_clone_app/injection_container.dart' as di;
+
+import '../../../domain/usecases/firebase_usecases/user/user_usecases.dart';
 
 class FollowingPage extends StatelessWidget {
   final UserEntity user;

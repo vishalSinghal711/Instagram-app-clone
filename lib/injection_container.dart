@@ -6,34 +6,7 @@ import 'package:instagram_clone_app/features/data/data_sources/remote_data_sourc
 import 'package:instagram_clone_app/features/data/data_sources/remote_data_source/remote_data_source_impl.dart';
 import 'package:instagram_clone_app/features/data/repository/firebase_repository_impl.dart';
 import 'package:instagram_clone_app/features/domain/repository/firebase_repository.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/comment/create_comment_usecase.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/comment/delete_comment_usecase.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/comment/like_comment_usecase.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/comment/read_comment_usecase.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/comment/update_comment_usecase.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/post/create_post_usecase.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/post/delete_post_usecase.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/post/like_post_usecase.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/post/read_posts_usecase.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/post/read_single_post_usecase.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/post/update_post_usecase.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/replay/create_replay_usecase.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/replay/delete_replay_usecase.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/replay/like_replay_usecase.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/replay/read_replays_usecase.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/replay/update_replay_usecase.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/storage/upload_image_to_storage_usecase.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/user/create_user_usecase.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/user/follow_unfollow_user_usecase.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/user/get_current_uid_usecase.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/user/get_single_other_user_usecase.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/user/get_single_user_usecase.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/user/get_users_usecase.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/user/is_sign_in_usecase.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/user/sign_in_user_usecase.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/user/sign_out_usecase.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/user/sign_up_user_usecase.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/user/update_user_usecase.dart';
+
 import 'package:instagram_clone_app/features/presentation/cubit/auth/auth_cubit.dart';
 import 'package:instagram_clone_app/features/presentation/cubit/comment/comment_cubit.dart';
 import 'package:instagram_clone_app/features/presentation/cubit/credentail/credential_cubit.dart';
@@ -43,6 +16,12 @@ import 'package:instagram_clone_app/features/presentation/cubit/replay/replay_cu
 import 'package:instagram_clone_app/features/presentation/cubit/user/get_single_other_user/get_single_other_user_cubit.dart';
 import 'package:instagram_clone_app/features/presentation/cubit/user/get_single_user/get_single_user_cubit.dart';
 import 'package:instagram_clone_app/features/presentation/cubit/user/user_cubit.dart';
+
+import 'features/domain/usecases/firebase_usecases/comment/comment_usecases.dart';
+import 'features/domain/usecases/firebase_usecases/post/post_usescases.dart';
+import 'features/domain/usecases/firebase_usecases/replay/replay_usecases.dart';
+import 'features/domain/usecases/firebase_usecases/storage/upload_image_to_storage_usecase.dart';
+import 'features/domain/usecases/firebase_usecases/user/user_usecases.dart';
 
 final sl = GetIt.instance;
 

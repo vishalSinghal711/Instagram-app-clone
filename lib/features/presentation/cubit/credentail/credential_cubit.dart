@@ -3,8 +3,8 @@ import 'dart:io';
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:instagram_clone_app/features/domain/entities/user/user_entity.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/user/sign_in_user_usecase.dart';
-import 'package:instagram_clone_app/features/domain/usecases/firebase_usecases/user/sign_up_user_usecase.dart';
+
+import '../../../domain/usecases/firebase_usecases/user/user_usecases.dart';
 
 part 'credential_state.dart';
 
